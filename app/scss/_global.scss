@@ -1,13 +1,13 @@
 // Основные стили документа
 html,
 body {
-	// font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	height: 100vh;
 	overflow-x: hidden;
-	background: #fff;
-	color: #000;
+	background: $white;
+	color: $dark-brown;
 	line-height: 140%;
 }
 
@@ -15,4 +15,23 @@ body {
 	body {
 		font-size: 14px;
 	}
+}
+
+h1,
+h2 {
+	font-family: "Forum", serif;
+}
+
+.header{
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.header-container{
+	width: 100vw;
+	padding: 0 14vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }

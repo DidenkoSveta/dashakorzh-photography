@@ -1,6 +1,6 @@
 // burger menu
 let menuOpenButton = document.querySelector('.header__burger');
-let menu = document.querySelector('.navigation__menu ');
+let menu = document.querySelector('.navigation__menu');
 let menuLinks = document.querySelectorAll('.menu__link'); // Получаем все ссылки внутри меню
 
 // Обработчик клика для открытия меню
