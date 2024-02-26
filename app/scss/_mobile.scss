@@ -209,7 +209,7 @@
       flex-direction: column;
    }
    .promo__image-container {
-      margin-top: 40px;
+      margin: 20px 35px 40px;
       img {
          height: 160px;
          width: 220px;
@@ -231,8 +231,8 @@
       &-bg {
          position: absolute;
          z-index: 1;
-         top: 35px;
-         left: -40px;
+         top: 30px;
+         left: -35px;
          transform: rotate(-8deg);
       }
    }
@@ -250,7 +250,13 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+   .promo__mobile-img{
+      display: block;
+   }
+   .promo__desktop-img{
+      display: none;
+   }
 }
 @media (max-width: 1040px) {
 }
