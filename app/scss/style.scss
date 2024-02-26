@@ -29,13 +29,24 @@
          border-radius: 100px;
          padding: 6px;
       }
+      &-link:hover{
+         background-color: $yellow;
+         border-radius: 100px;
+         padding: 6px;
+         transition: background-color 0.3s ease-in-out;
+      }
    }
    &__tel{
       font-weight: 700;
       color: $dark-brown;
    }
+   &__tel:hover{
+      color: $yellow;
+      transition: color 0.3s ease-in-out;
+   }
    &__burger {
       position: relative;
+      top: 10px;
       right: 0px;
       background-image: url("../images/icons/header/burger-menu.svg");
       cursor: pointer;
@@ -71,8 +82,13 @@
 
 .menu{
    &__link{
+      font-size: 17px;
       font-weight: 500;
       color: $dark-brown;
+   }
+   &__link:hover{
+      color: $yellow;
+      transition: color 0.3s ease-in-out;
    }
 }
 
