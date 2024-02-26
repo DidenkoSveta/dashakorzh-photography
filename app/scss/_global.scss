@@ -17,18 +17,50 @@ body {
 	}
 }
 
+a{
+	cursor: pointer;
+}
+
+h1{
+	font-size: 50px;
+	font-weight: 500;
+	line-height: 120%;
+	margin-bottom: 10px;
+}
+
+@media (max-width: 1040px){
+	h1{
+		font-size: 40px;
+	}
+}
+
+@media (max-width: 768px){
+	h1{
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 600px){
+	h1{
+		font-size: 28px;
+	}
+}
+
 h1,
 h2 {
 	font-family: "Forum", serif;
+	color: $brown;
 }
 
-.header{
+.header,
+.promo{
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 }
 
-.header-container{
+.header-container,
+.promo__container{
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
