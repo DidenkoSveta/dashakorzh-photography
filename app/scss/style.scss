@@ -4,6 +4,7 @@
 @import "global";
 
 .header {
+   background-color: $white;
    &-container {
       display: flex;
    }
@@ -94,9 +95,11 @@
 
 .promo {
    position: relative;
+   background-color: $white;
    color: $brown;
    &__container {
-      margin-top: 80px;
+      margin-top: 100px;
+      margin-bottom: 80px;
       justify-content: flex-start;
       gap: 22%;
    }
@@ -116,6 +119,7 @@
          position: relative;
          z-index: 2;
          transform: rotate(14deg);
+         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
       }
       &-bg {
          position: absolute;
@@ -164,6 +168,7 @@
    padding: 14px 40px;
    border-radius: 100px;
    cursor: pointer;
+   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
 }
 
 .link-btn:hover {
@@ -171,8 +176,53 @@
    transition: background-color 0.3s ease-in-out;
 }
 
-.promo__mobile-img{
+.promo__mobile-img {
    display: none;
+}
+
+.about {
+   &__container {
+      flex-direction: column;
+   }
+   &__wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
+   }
+   &__description {
+      margin-top: 25px;
+      width: 60%;
+      max-width: 720px;
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      p {
+         font-size: 18px;
+         line-height: 160%;
+      }
+   }
+   &__image-container {
+      position: relative;
+   }
+   &__image,
+   &__image-bg {
+      width: 305px;
+      height: 320px;
+      object-fit: cover;
+      object-position: center top;
+      border-radius: 20px;
+   }
+   &__image {
+      position: relative;
+      z-index: 2;
+   }
+   &__image-bg {
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      z-index: 1;
+   }
 }
 
 @import "mobile";

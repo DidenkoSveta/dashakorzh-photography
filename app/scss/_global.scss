@@ -6,7 +6,7 @@ body {
 	font-size: 16px;
 	height: 100vh;
 	overflow-x: hidden;
-	background: $white;
+	background: #fff;
 	color: $dark-brown;
 	line-height: 140%;
 }
@@ -22,9 +22,7 @@ a{
 }
 
 h1{
-	font-size: 50px;
-	font-weight: 500;
-	line-height: 120%;
+	font-size: 54px;
 	margin-bottom: 10px;
 }
 
@@ -36,7 +34,7 @@ h1{
 
 @media (max-width: 768px){
 	h1{
-		font-size: 34px;
+		font-size: 38px;
 	}
 }
 
@@ -50,20 +48,58 @@ h1,
 h2 {
 	font-family: "Forum", serif;
 	color: $brown;
+	line-height: 120%;
+	font-weight: 500;
+}
+
+h2{
+	font-size: 42px;
+	margin-bottom: 40px;
+}
+
+@media (max-width: 1040px){
+	h2{
+		font-size: 32px;
+	}
+}
+
+@media (max-width: 490px){
+	h2{
+		font-size: 22px;
+	}
 }
 
 .header,
-.promo{
+.promo,
+.about{
 	width: 100vw;
 	display: flex;
 	justify-content: center;
 }
 
 .header-container,
-.promo__container{
+.promo__container,
+.about__container{
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+section{
+	margin-top: 140px;
+}
+
+@media (max-width: 1240px) {
+	section{
+		margin-top: 80px;
+	}
+}
+
+
+@media (max-width: 490px) {
+	section{
+		margin-top: 50px;
+	}
 }
