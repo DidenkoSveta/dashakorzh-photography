@@ -272,4 +272,94 @@
    }
 }
 
+.price {
+   background-color: $white;
+   padding: 100px 0;
+   &__container {
+      flex-direction: column;
+   }
+   &__grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      column-gap: 2%;
+      row-gap: 100px;
+   }
+   &__features{
+      display: flex;
+      flex-direction: column;
+      li{
+         font-size: 16px;
+         text-align: left;
+         margin-bottom: 8px;
+      }
+      li::before{
+         content: ' ';
+         display: block;
+         margin-bottom: 8px;
+         height: 1px;
+         width: 100%;
+         background-color: #bf907569;
+      }
+   }
+   &__card {
+      width: 32%;
+      padding: 50px 45px;
+      background-color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 20px;
+      box-shadow: 0px 2px 6px rgba(115, 66, 48, 0.1);
+      transition: transform 0.1s ease-in-out;
+
+   }
+   &__card:hover{
+      transform: scale(1.02);
+      transition: transform 0.1s ease-in-out;
+   }
+   &__cost{
+      font-size: 40px;
+      font-family: "Forum", serif;
+      line-height: 120%;
+      font-weight: 500;
+      margin-top: 20px;
+   }
+   &__btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+   }
+   &__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      &-title {
+         font-family: "Forum", serif;
+         font-size: 32px;
+         line-height: 120%;
+         font-weight: 500;
+         text-transform: uppercase;
+      }
+      &-premium{
+         background-color: $light-bege;
+      }
+   }
+   &__button{
+      padding: 20px 60px;
+   }
+}
+
+
+.rub { 
+	line-height: 5px;
+	width: 0.4em;
+	border-bottom: 1px solid $dark-brown; 
+	display: inline-block;
+   font-size: 34px;
+   font-weight: 500;
+}
+
 @import "mobile";

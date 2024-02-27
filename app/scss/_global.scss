@@ -55,18 +55,20 @@ h2 {
 h2 {
 	font-size: 42px;
 	margin-bottom: 40px;
+	text-align: center;
 }
 
 @media (max-width: 490px) {
 	h2 {
-		font-size: 32px;
+		font-size: 36px;
 	}
 }
 
 .header,
 .promo,
 .about,
-.portfolio {
+.portfolio,
+.price {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -75,7 +77,8 @@ h2 {
 .header-container,
 .promo__container,
 .about__container,
-.portfolio__container {
+.portfolio__container,
+.price__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
@@ -84,17 +87,17 @@ h2 {
 }
 
 section {
-	margin-top: 140px;
+	margin: 170px 0;
 }
 
 @media (max-width: 1240px) {
 	section {
-		margin-top: 80px;
+		margin: 100px 0;
 	}
 }
 
 @media (max-width: 490px) {
 	section {
-		margin-top: 50px;
+		margin: 80px 0;
 	}
 }

@@ -2,7 +2,8 @@
    .header-container,
    .promo__container,
    .about__container,
-   .portfolio__container {
+   .portfolio__container,
+   .price__container {
       padding: 0 8vw;
    }
 }
@@ -11,7 +12,8 @@
    .header-container,
    .promo__container,
    .about__container,
-   .portfolio__container {
+   .portfolio__container,
+   .price__container {
       padding: 0 4vw;
    }
 }
@@ -369,11 +371,87 @@
       width: 100%;
    }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
+   .price__features {
+      li {
+         font-size: 15px;
+      }
+   }
+   .price__card {
+      width: 32%;
+      padding: 40px 25px;
+   }
 }
 @media (max-width: 1040px) {
+   .price__features {
+      li {
+         font-size: 14px;
+         margin-bottom: 6px;
+      }
+      li::before {
+         content: " ";
+         margin-bottom: 6px;
+      }
+   }
+
+   .price__card {
+      width: 46%;
+      max-width: 350px;
+      padding: 40px 25px;
+   }
+
+   .price__card:hover {
+      transform: scale(1);
+      transition: transform 0.1s ease-in-out;
+   }
+
+   .price__item-title {
+      font-size: 28px;
+   }
+
+   .price__cost {
+      font-size: 32px;
+   }
+   .rub { 
+      font-size: 28px;
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+
+   .price {
+      padding: 40px 0;
+   }
+   .price__features {
+      li {
+         font-size: 13px;
+      }
+   }
+
+   .price__card {
+      width: 100%;
+      max-width: 350px;
+      padding: 40px 25px;
+   }
+
+   .price__card:hover {
+      transform: scale(1);
+      transition: transform 0.1s ease-in-out;
+   }
+
+   .price__item-title {
+      font-size: 28px;
+   }
+
+   .price__cost {
+      font-size: 32px;
+   }
+   .rub { 
+      font-size: 28px;
+   }
+   .price__grid{
+      column-gap: 4%;
+      row-gap: 30px;
+   }
 }
 @media (max-width: 1040px) {
 }
