@@ -5,7 +5,8 @@
    .portfolio__container,
    .price__container,
    .advantages__container,
-   .process__container {
+   .process__container,
+   .faq-container {
       padding: 0 8vw;
    }
 }
@@ -17,7 +18,8 @@
    .portfolio__container,
    .price__container,
    .advantages__container,
-   .process__container {
+   .process__container,
+   .faq-container {
       padding: 0 4vw;
    }
 }
@@ -518,7 +520,7 @@
             font-size: 18px;
          }
       }
-      &__step{
+      &__step {
          width: 63px;
          height: 66px;
          object-fit: cover;
@@ -527,10 +529,10 @@
 }
 @media (max-width: 1040px) {
    .process {
-      &__container{
+      &__container {
          gap: 20px;
       }
-      &__grid{
+      &__grid {
          flex-wrap: wrap;
          justify-content: center;
          gap: 20px;
@@ -542,7 +544,7 @@
             font-size: 16px;
          }
       }
-      &__step{
+      &__step {
          width: 63px;
          height: 66px;
          object-fit: cover;
@@ -550,27 +552,60 @@
    }
 }
 @media (max-width: 900px) {
-   .process__item{
+   .process__item {
       width: 48%;
    }
 }
 @media (max-width: 560px) {
-   .process__item{
+   .process__item {
       width: 360px;
    }
-   .process__container{
+   .process__container {
       gap: 0px;
    }
 }
 
 @media (max-width: 390px) {
-   .process__item{
+   .process__item {
       width: 100%;
    }
 }
 @media (max-width: 1040px) {
+   .faq {
+      &-container {
+         gap: 20px;
+      }
+      &-question {
+         font-size: 18px;
+      }
+      &-question::after {
+         font-size: 36px;
+         font-weight: 300;
+      }
+      &-item {
+         padding: 20px 0;
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 490px) {
+   .faq {
+      &-container {
+         gap: 14px;
+      }
+      &-question {
+         font-size: 16px;
+      }
+      &-question::after {
+         font-size: 30px;
+      }
+      &-item {
+         padding: 16px 0;
+      }
+      .faq-question.active {
+         padding-bottom: 12px;
+         transition: 0.3s ease-in-out;
+      }
+   }
 }
 @media (max-width: 1040px) {
 }
