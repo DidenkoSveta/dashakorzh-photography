@@ -17,29 +17,29 @@ body {
 	}
 }
 
-a{
+a {
 	cursor: pointer;
 }
 
-h1{
+h1 {
 	font-size: 54px;
 	margin-bottom: 10px;
 }
 
-@media (max-width: 1040px){
-	h1{
+@media (max-width: 1040px) {
+	h1 {
 		font-size: 40px;
 	}
 }
 
-@media (max-width: 768px){
-	h1{
+@media (max-width: 768px) {
+	h1 {
 		font-size: 38px;
 	}
 }
 
-@media (max-width: 600px){
-	h1{
+@media (max-width: 600px) {
+	h1 {
 		font-size: 28px;
 	}
 }
@@ -52,26 +52,21 @@ h2 {
 	font-weight: 500;
 }
 
-h2{
+h2 {
 	font-size: 42px;
 	margin-bottom: 40px;
 }
 
-@media (max-width: 1040px){
-	h2{
+@media (max-width: 490px) {
+	h2 {
 		font-size: 32px;
-	}
-}
-
-@media (max-width: 490px){
-	h2{
-		font-size: 22px;
 	}
 }
 
 .header,
 .promo,
-.about{
+.about,
+.portfolio {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -79,7 +74,8 @@ h2{
 
 .header-container,
 .promo__container,
-.about__container{
+.about__container,
+.portfolio__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
@@ -87,19 +83,18 @@ h2{
 	justify-content: center;
 }
 
-section{
+section {
 	margin-top: 140px;
 }
 
 @media (max-width: 1240px) {
-	section{
+	section {
 		margin-top: 80px;
 	}
 }
 
-
 @media (max-width: 490px) {
-	section{
+	section {
 		margin-top: 50px;
 	}
 }

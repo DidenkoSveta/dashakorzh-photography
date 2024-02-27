@@ -39,7 +39,7 @@
    }
    &__tel {
       font-weight: 700;
-      color: $dark-brown;
+      color: $brown;
    }
    &__tel:hover {
       color: $yellow;
@@ -222,6 +222,53 @@
       top: 25px;
       left: 25px;
       z-index: 1;
+   }
+}
+
+.portfolio {
+   &__container {
+      flex-direction: column;
+   }
+   &__grid {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: 2%;
+      row-gap: 70px;
+   }
+   &__card {
+      position: relative;
+      width: 32%;
+   }
+   &__caption {
+      position: absolute;
+      top: 92%;
+      left: 35px;
+      transform: rotate(-5deg);
+      width: 240px;
+      height: 60px;
+      color: $white;
+      border-radius: 10px;
+      background-color: $bege;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease-in-out;
+   }
+   &__image {
+      width: 100%;
+      transition: transform 0.3s ease-in-out;
+   }
+   &__card:hover {
+      .portfolio__image {
+         transform: scale(1.02);
+         transition: transform 0.3s ease-in-out;
+      }
+      .portfolio__caption {
+         transform: rotate(0deg);
+         transition: transform 0.3s ease-in-out;
+      }
    }
 }
 
