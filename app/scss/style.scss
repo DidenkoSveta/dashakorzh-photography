@@ -285,16 +285,16 @@
       column-gap: 2%;
       row-gap: 100px;
    }
-   &__features{
+   &__features {
       display: flex;
       flex-direction: column;
-      li{
+      li {
          font-size: 16px;
          text-align: left;
          margin-bottom: 8px;
       }
-      li::before{
-         content: ' ';
+      li::before {
+         content: " ";
          display: block;
          margin-bottom: 8px;
          height: 1px;
@@ -312,26 +312,25 @@
       border-radius: 20px;
       box-shadow: 0px 2px 6px rgba(115, 66, 48, 0.1);
       transition: transform 0.1s ease-in-out;
-
    }
-   &__card:hover{
+   &__card:hover {
       transform: scale(1.02);
       transition: transform 0.1s ease-in-out;
    }
-   &__cost{
+   &__cost {
       font-size: 40px;
       font-family: "Forum", serif;
       line-height: 120%;
       font-weight: 500;
       margin-top: 20px;
    }
-   &__btn{
+   &__btn {
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
    }
-   &__item{
+   &__item {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -343,58 +342,107 @@
          font-weight: 500;
          text-transform: uppercase;
       }
-      &-premium{
+      &-premium {
          background-color: $light-bege;
       }
    }
-   &__button{
+   &__button {
       padding: 20px 60px;
    }
 }
 
-
-.rub { 
-	line-height: 5px;
-	width: 0.4em;
-	border-bottom: 1px solid $dark-brown; 
-	display: inline-block;
+.rub {
+   line-height: 5px;
+   width: 0.4em;
+   border-bottom: 1px solid $dark-brown;
+   display: inline-block;
    font-size: 34px;
    font-weight: 500;
 }
 
-.advantages{
-   &__container{
+.advantages {
+   &__container {
       flex-direction: column;
    }
-   &__grid{
+   &__grid {
       margin-top: 50px;
       width: 100%;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
    }
-   &__card{
+   &__card {
       display: flex;
       position: relative;
       flex-direction: column;
       align-items: center;
       max-width: 210px;
       gap: 30px;
-      p{
+      p {
          font-size: 20px;
          text-align: center;
          font-weight: 500;
       }
    }
    &__card:nth-child(2),
-   &__card:nth-child(5){
+   &__card:nth-child(5) {
       margin-top: 40px;
    }
    &__card:nth-child(3),
-   &__card:nth-child(4){
+   &__card:nth-child(4) {
       margin-top: 80px;
    }
 }
 
+.process {
+   &__container {
+      flex-direction: column;
+      gap: 40px;
+   }
+   &__grid {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+   }
+   &__item {
+      display: flex;
+      background-color: $white;
+      flex-direction: column;
+      box-shadow: 0px 0px 4px 2px rgba(115, 66, 48, 0.08);
+      position: relative;
+      width: 23%;
+      gap: 20px;
+      border-radius: 20px;
+      padding: 60px 30px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      h3 {
+         font-size: 20px;
+         font-weight: 500;
+         z-index: 2;
+      }
+      p {
+         z-index: 2;
+      }
+   }
+   &__step {
+      z-index: 1;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Forum", serif;
+      font-size: 40px;
+      color: #ffffff;
+      right: 10px;
+      top: 10px;
+      background-image: url("../images/icons/process-number.svg");
+      width: 80px;
+      height: 84px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+   }
+}
 
 @import "mobile";

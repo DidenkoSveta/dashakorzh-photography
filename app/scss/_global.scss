@@ -60,7 +60,7 @@ h2 {
 
 @media (max-width: 490px) {
 	h2 {
-		font-size: 36px;
+		font-size: 32px;
 	}
 }
 
@@ -69,7 +69,8 @@ h2 {
 .about,
 .portfolio,
 .price,
-.advantages {
+.advantages,
+.process {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -80,7 +81,8 @@ h2 {
 .about__container,
 .portfolio__container,
 .price__container,
-.advantages__container {
+.advantages__container,
+.process__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
