@@ -3,7 +3,8 @@
    .promo__container,
    .about__container,
    .portfolio__container,
-   .price__container {
+   .price__container,
+   .advantages__container {
       padding: 0 8vw;
    }
 }
@@ -13,7 +14,8 @@
    .promo__container,
    .about__container,
    .portfolio__container,
-   .price__container {
+   .price__container,
+   .advantages__container {
       padding: 0 4vw;
    }
 }
@@ -412,12 +414,11 @@
    .price__cost {
       font-size: 32px;
    }
-   .rub { 
+   .rub {
       font-size: 28px;
    }
 }
 @media (max-width: 768px) {
-
    .price {
       padding: 40px 0;
    }
@@ -445,13 +446,89 @@
    .price__cost {
       font-size: 32px;
    }
-   .rub { 
+   .rub {
       font-size: 28px;
    }
-   .price__grid{
+   .price__grid {
       column-gap: 4%;
       row-gap: 30px;
    }
+}
+@media (max-width: 1240px) {
+   .advantages__card{
+      gap: 16px;
+      p{
+         font-size: 18px;
+      }
+      img{
+         width: 50px;
+      }
+   }
+}
+@media (max-width: 1040px) {
+   .advantages__grid{
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 20px;
+   }
+   .advantages__card:nth-child(2),
+   .advantages__card:nth-child(5){
+      margin-top: 40px;
+   }
+   .advantages__card:nth-child(3),
+   .advantages__card:nth-child(4){
+      margin-top: 0px;
+   }
+   .advantages__card{
+      width: 30%;
+      max-width: 30%;
+   }
+}
+@media (max-width: 490px) {
+   .advantages__grid{
+      flex-wrap: wrap;
+      margin-top: 20px;
+      gap: 24px;
+   }
+   .advantages__card:nth-child(2),
+   .advantages__card:nth-child(5){
+      margin-top: 0px;
+   }
+   .advantages__card{
+      width: 44%;
+      max-width: 44%;
+      gap: 10px;
+      p{
+         font-size: 14px;
+      }
+      img{
+         width: 40px;
+      }
+   }
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
+}
+@media (max-width: 1040px) {
 }
 @media (max-width: 1040px) {
 }

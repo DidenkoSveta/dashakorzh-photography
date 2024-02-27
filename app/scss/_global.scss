@@ -68,7 +68,8 @@ h2 {
 .promo,
 .about,
 .portfolio,
-.price {
+.price,
+.advantages {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -78,7 +79,8 @@ h2 {
 .promo__container,
 .about__container,
 .portfolio__container,
-.price__container {
+.price__container,
+.advantages__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
