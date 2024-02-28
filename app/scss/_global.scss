@@ -71,7 +71,8 @@ h2 {
 .price,
 .advantages,
 .process,
-.faq {
+.faq,
+.feedback {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -84,7 +85,8 @@ h2 {
 .price__container,
 .advantages__container,
 .process__container,
-.faq-container {
+.faq-container,
+.feedback__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;

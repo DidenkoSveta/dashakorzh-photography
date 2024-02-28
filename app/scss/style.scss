@@ -472,18 +472,21 @@
    .faq-question.active {
       padding-bottom: 20px;
       transition: 0.3s ease-in-out;
-    }
+   }
    .faq-question.active::after {
       transform: rotate(-45deg);
       color: $bege;
       transition: 0.3s ease-in-out;
-    }
+   }
    &-item {
       cursor: pointer;
       display: flex;
       flex-direction: column;
       padding: 33px 0;
       border-top: 1px solid #bf907557;
+      &__last{
+         padding: 0;
+      }
    }
    &-item:hover {
       .faq-question::after {
@@ -491,10 +494,104 @@
          transition: color 0.3s ease-in-out;
       }
    }
-   &-answer{
+   &-answer {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease-in-out;
+   }
+}
+
+.feedback {
+   &__container {
+      flex-direction: column;
+      width: 100%;
+   }
+   &__wrapper {
+      display: flex;
+      justify-content: space-around;
+      background-color: $light-bege;
+      width: 100%;
+      padding: 60px 100px;
+      border-radius: 40px;
+      gap: 40px;
+      &-img {
+         max-width: 400px;
+         max-height: 400px;
+         border-radius: 26px;
+      }
+   }
+   &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      max-width: 480px;
+      align-items: flex-start;
+      &-text {
+         font-size: 20px;
+      }
+   }
+   &__input {
+      width: 100%;
+      padding-left: 35px;
+      height: 60px;
+      border: 1px solid $bege;
+      border-radius: 100px;
+      background-color: $light-bege;
+      &-group {
+         width: 100%;
+      }
+   }
+   &__input::placeholder {
+      color: $bege;
+      font-size: 16px;
+   }
+   &__consent {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: $brown;
+      a {
+         color: $dark-brown;
+         transition: color 0.3s ease-in-out;
+      }
+      a:hover {
+         color: $white;
+      }
+   }
+   &__checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: transparent;
+      width: 26px;
+      height: 20px;
+      margin-right: 10px;
+      cursor: pointer;
+      border: 2px solid $brown;
+      position: relative;
+   }
+   &__checkbox:checked:after {
+      content: "";
+      position: absolute;
+      left: 2px;
+      bottom: 3px;
+      width: 12px;
+      height: 12px;
+      border: solid $bege;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+   }
+   &__submit {
+      text-transform: uppercase;
+      width: 100%;
+      height: 60px;
+      background-color: $brown;
+      color: $white;
+      border: none;
+      cursor: pointer;
+   }
+
+   &__submit:hover {
    }
 }
 
