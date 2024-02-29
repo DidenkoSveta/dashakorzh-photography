@@ -73,7 +73,8 @@ h2 {
 .process,
 .faq,
 .feedbackб
-.footer {
+.footer,
+.quiz {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -88,7 +89,8 @@ h2 {
 .process__container,
 .faq-container,
 .feedback__container,
-.footer__container {
+.footer__container,
+.quiz__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;

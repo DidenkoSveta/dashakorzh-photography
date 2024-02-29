@@ -1,0 +1,90 @@
+<div class="quiz">
+   <div class="quiz__container">
+      <h2 class="quiz__title">Ответьте на 3 вопроса и получите</h2>
+
+      <div class="quiz__gifts">
+         <div class="quiz__gifts-item">
+            <img src="images/icons/quiz-gift.svg" class="quiz__gifts-img"
+               alt="дополнительный час к фотосъемке бесплатно">
+            <p class="quiz__gifts-text">дополнительный час к фотосъемке бесплатно</p>
+         </div>
+         <div class="quiz__gifts-item">
+            <img src="images/icons/quiz-gift.svg" class="quiz__gifts-img"
+               alt="Подбор и расчет стоимости вашей фотосессии">
+            <p class="quiz__gifts-text">Подбор и расчет стоимости вашей фотосессии</p>
+         </div>
+         <div class="quiz__gifts-item">
+            <img src="images/icons/quiz-gift.svg" class="quiz__gifts-img" alt="Бесплатную консультацию фотографа">
+            <p class="quiz__gifts-text">Бесплатную консультацию фотографа</p>
+         </div>
+      </div>
+
+      <div class="quiz__form quiz__wrapper">
+
+         <div class="quiz__step quiz__step--active" id="step1">
+            <p>Сколько часов съемки вы планируете?</p>
+            <div class="quiz__radio">
+               <div class="quiz__radio">
+                  <label class="custom-radio"><input type="radio" name="time" value="4"><span class="radio-btn"></span>
+                     4 часа</label>
+                  <label class="custom-radio"><input type="radio" name="time" value="6"><span class="radio-btn"></span>
+                     6 часов</label>
+                  <label class="custom-radio"><input type="radio" name="time" value="10"><span class="radio-btn"></span>
+                     10 часов</label>
+                  <label class="custom-radio"><input type="radio" name="time" value="14"><span class="radio-btn"></span>
+                     14 часов</label>
+               </div>
+               <div class="quiz-btn">
+                  <button class="quiz__back link-btn">← Назад</button>
+                  <button class="quiz__next link-btn">Далее →</button>
+               </div>
+            </div>
+         </div>
+
+         <div class="quiz__step" id="step2">
+            <p>Знаете ли вы дату вашей свадьбы?</p>
+            <span>Если у вас еще нет точной даты свадьбы, укажите примерную» или пропустите вопрос</span>
+            <div class="quiz__date-picker">
+               <input type="date" id="wedding-date" name="wedding-date" class="custom-date">
+            </div>
+            <div class="quiz-btn">
+               <button class="quiz__back link-btn">← Назад</button>
+               <button class="quiz__next link-btn">Далее →</button>
+            </div>
+         </div>
+
+         <div class="quiz__step" id="step3">
+            <p>Комментарии и пожелания</p>
+            <textarea id="comments" name="comments" class="custom-textarea"
+               placeholder="Ваши комментарии..."></textarea>
+            <div class="quiz-btn">
+               <button class="quiz__back link-btn">← Назад</button>
+               <button class="quiz__next link-btn">Далее →</button>
+            </div>
+         </div>
+
+         <div class="quiz__step" id="step4">
+            <p>Оставьте контакты и я напишу вам <br> в WhatsApp для консультации</p>
+            <div class="quiz__contact-block">
+               <input type="text" id="name" name="name" placeholder="Ваше имя" class="custom-input">
+               <input type="tel" id="phone" name="phone" placeholder="Контактный телефон" class="custom-input">
+               <label class="custom-checkbox-label">
+                  <input type="checkbox" id="agree" name="agree" class="custom-checkbox">
+                  <span class="checkbox-custom"></span>
+                  Нажимая на кнопку вы даете согласие на обработку своих персональных данных
+               </label>
+            </div>
+            <div class="quiz-btn">
+               <button class="quiz__back link-btn">← Назад</button>
+               <button type="submit" class="quiz__next link-btn">Отправить</button>
+            </div>
+         </div>
+
+         <div class="quiz__step quiz__final-massage" id="step5" id="finalMessage">
+            <p>Спасибо за заявку!</p>
+            <p>Я свяжусь с вами в ближайшее время и уточню свободна ли я в день вашей свадьбы.</p>
+         </div>
+
+      </div>
+   </div>
+</div>

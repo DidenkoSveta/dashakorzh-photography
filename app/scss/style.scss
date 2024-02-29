@@ -169,6 +169,7 @@
    border-radius: 100px;
    cursor: pointer;
    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+   transition: background-color 0.3s ease-in-out;
 }
 
 .link-btn:hover {
@@ -484,7 +485,7 @@
       flex-direction: column;
       padding: 33px 0;
       border-top: 1px solid #bf907557;
-      &__last{
+      &__last {
          padding: 0;
       }
    }
@@ -595,29 +596,275 @@
    }
 }
 
-.footer{
+.footer {
    background-color: $dark-brown;
    color: $white;
    padding: 50px 0;
-   &__container{
+   &__container {
       justify-content: space-between;
    }
    &__branding,
    &__navigation,
-   &__contact{
+   &__contact {
       display: flex;
       flex-direction: column;
       gap: 10px;
       a,
-      p{
+      p {
          color: $white;
          font-weight: 200;
          transition: color 0.3s ease-in-out;
       }
-      a:hover{
+      a:hover {
          color: $yellow;
          transition: color 0.3s ease-in-out;
       }
    }
 }
+
+.quiz {
+   &__container {
+      flex-direction: column;
+   }
+   &__gifts {
+      padding: 40px;
+      display: flex;
+      width: 90%;
+      justify-content: space-between;
+      &-text {
+         width: auto;
+         max-width: 150px;
+         font-weight: 500;
+      }
+      &-item {
+         display: flex;
+         gap: 22px;
+      }
+   }
+   &__form {
+      width: 90%;
+      background-color: $white;
+      border-top: 4px solid $bege;
+      padding: 50px;
+      p {
+         font-size: 26px;
+         line-height: 130%;
+      }
+   }
+   &__step {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+   }
+   &__radio {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+   }
+   &__next,
+   &__back {
+      border: none;
+   }
+   &__back {
+      background-color: $light-bege;
+   }
+   &-btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+   }
+   &__final-massage {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p{
+         font-size: 32px;
+         font-family: "Forum", serif;
+         font-weight: 400;
+         line-height: 140%;
+         color: $dark-brown;
+         text-align: center;
+      }
+   }
+}
+
+.quiz__form {
+   .quiz__radio .custom-radio {
+      position: relative;
+      padding-left: 35px;
+      display: block;
+      cursor: pointer;
+      margin-bottom: 14px; /* Добавляем пространство между радио-кнопками */
+      font-size: 20px;
+   }
+
+   .quiz__radio input[type="radio"] {
+      opacity: 0;
+      position: absolute;
+      cursor: pointer;
+   }
+
+   .radio-btn {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      background-color: #fff;
+      border: 2px solid #b89476;
+      border-radius: 50%;
+   }
+
+   /* Стиль для :after (отображение выбранного состояния) */
+   .quiz__radio input[type="radio"]:checked + .radio-btn::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #b89476;
+   }
+
+   /* Используем ::after для создания внутреннего кружка */
+   .radio-btn::after {
+      content: "";
+      position: absolute;
+      display: none; /* По умолчанию скрыт, показывается только когда input:checked */
+   }
+
+   .quiz__radio input[type="radio"]:checked + .radio-btn::after {
+      display: block; /* Показываем внутренний кружок когда input:checked */
+   }
+
+   /* Добавьте этот CSS к вашему существующему файлу стилей */
+   .custom-date {
+      background-color: #fff; /* Цвет фона */
+      border: 2px solid #b89476; /* Цвет границы, как на вашем изображении */
+      border-radius: 5px; /* Скругление углов */
+      padding: 10px; /* Внутренний отступ */
+      font-size: 16px; /* Размер шрифта */
+      color: #000; /* Цвет текста */
+   }
+
+   /* Стили для изменения иконки календаря */
+   .custom-date::-webkit-calendar-picker-indicator {
+      filter: invert(0.5); /* Инвертировать цвет иконки, если необходимо */
+      cursor: pointer;
+   }
+
+   /* Добавьте этот CSS к вашему существующему файлу стилей */
+   .custom-textarea {
+      width: 100%; /* Задаем ширину на всю доступную ширину контейнера */
+      height: 150px; /* Высота поля */
+      padding: 10px; /* Внутренний отступ */
+      font-size: 16px; /* Размер шрифта */
+      border: 2px solid #b89476; /* Цвет границы, как на вашем изображении */
+      border-radius: 5px; /* Скругление углов */
+      background-color: #fff; /* Цвет фона */
+      color: #000; /* Цвет текста */
+      resize: vertical; /* Позволяет пользователю изменять размер поля по вертикали */
+   }
+
+   /* Стили для плейсхолдера */
+   .custom-textarea::placeholder {
+      color: #b89476; /* Цвет текста плейсхолдера */
+   }
+
+   /* При фокусировке на поле */
+   .custom-textarea:focus {
+      outline: none; /* Убираем стандартный outline */
+      border-color: #a78265; /* Меняем цвет границы при фокусировке */
+   }
+
+   /* Убедитесь, что стили для кнопок .quiz__back и .quiz__next уже определены в вашем CSS */
+
+   /* Добавьте этот CSS к вашему существующему файлу стилей */
+   .custom-input {
+      display: block;
+      width: 100%; /* Ширина поля на всю доступную ширину контейнера */
+      padding: 20px; /* Внутренний отступ */
+      margin-bottom: 20px; /* Отступ снизу */
+      font-size: 16px; /* Размер шрифта */
+      border: 1px solid #b89476; /* Цвет границы */
+      border-radius: 100px; /* Скругление углов */
+      background-color: #fff; /* Цвет фона */
+      color: #000; /* Цвет текста */
+   }
+
+   .custom-input:focus {
+      outline: none; /* Убираем стандартный outline при фокусе */
+      border-color: #a78265; /* Меняем цвет границы при фокусе */
+   }
+
+   .custom-input::placeholder {
+      color: #b89476; /* Цвет текста плейсхолдера */
+   }
+
+   .custom-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px; /* Отступ снизу */
+   }
+
+   .custom-checkbox input[type="checkbox"] {
+      margin-right: 10px; /* Отступ между чекбоксом и текстом */
+   }
+
+   .checkbox-text {
+      font-size: 14px; /* Размер шрифта текста рядом с чекбоксом */
+   }
+
+   /* Скрытие стандартного чекбокса */
+   .custom-checkbox {
+      opacity: 0;
+      position: absolute;
+   }
+
+   /* Стилизация текста рядом с чекбоксом */
+   .custom-checkbox-label {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px; /* Можно адаптировать под ваш дизайн */
+   }
+
+   /* Создание кастомной графики для чекбокса */
+   .checkbox-custom {
+      display: inline-block;
+      width: 20px; /* Размер чекбокса */
+      height: 20px;
+      margin-right: 10px; /* Отступ от текста */
+      background-color: #fff; /* Цвет фона */
+      border: 1px solid #b89476; /* Цвет границы */
+      border-radius: 4px; /* Скругление углов */
+      vertical-align: middle;
+      position: relative;
+   }
+
+   /* Стиль для символа галочки */
+   .custom-checkbox:checked + .checkbox-custom::after {
+      content: "";
+      position: absolute;
+      left: 5px; /* Позиционирование галочки */
+      top: 1px;
+      width: 7px;
+      height: 13px;
+      border: solid #b89476;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+   }
+}
+
+.quiz__step {
+   display: none; /* скрываем все шаги */
+}
+
+.quiz__step--active {
+   display: flex; /* показываем только активный шаг */
+}
+
 @import "mobile";
