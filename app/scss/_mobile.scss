@@ -7,7 +7,8 @@
    .advantages__container,
    .process__container,
    .faq-container,
-   .feedback__container {
+   .feedback__container,
+   .footer__container {
       padding: 0 8vw;
    }
 }
@@ -21,7 +22,8 @@
    .advantages__container,
    .process__container,
    .faq-container,
-   .feedback__container {
+   .feedback__container,
+   .footer__container {
       padding: 0 4vw;
    }
 }
@@ -703,9 +705,27 @@
       }
    }
 }
-@media (max-width: 1040px) {
-}
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .footer{
+      padding: 30px 0;
+      &__container{
+         flex-direction: column;
+         gap: 30px;
+      }
+      &__branding,
+      &__navigation,
+      &__contact{
+         width: 100%;
+         p,
+         a{
+            text-align: center;
+         }
+      }
+      &__navigation,
+      &__contact{
+         align-items: center;
+      }
+   }
 }
 @media (max-width: 1040px) {
 }
