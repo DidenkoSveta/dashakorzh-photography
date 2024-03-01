@@ -17,38 +17,126 @@
             <div class="modal-content">
                <span class="close">&times;</span>
                <div class="modal-gallery">
-                  <img src="images/img/portfolio/georgiy-ellina-01.jpg" alt="Фото 1">
-                  <img src="images/img/portfolio/georgiy-ellina-02.jpg" alt="Фото 2">
-                  <img src="images/img/portfolio/georgiy-ellina-03.jpg" alt="Фото 3">
-                  <img src="images/img/portfolio/georgiy-ellina-04.jpg" alt="Фото 4">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/GeorgiyEllina/GeorgiyEllina-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
                </div>
             </div>
          </div>
 
-         <a href="#" class="portfolio__card">
+         <!-- Ссылка на карточку пары "Руслан и Вера" -->
+         <a href="#modalRuslanVera" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-002.png" alt="Роман и Даша" class="portfolio__image">
             <div class="portfolio__caption">Руслан и Вера</div>
          </a>
 
-         <a href="#" class="portfolio__card">
+         <!-- Модальное окно для пары "Руслан и Вера" -->
+         <div id="modalRuslanVera" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/RuslanVera/RuslanVera-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Ссылка на карточку пары "Юра и Даяна" -->
+         <a href="#modalYuraDayana" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-003.png" alt="Роман и Даша" class="portfolio__image">
             <div class="portfolio__caption">Юра и Даяна</div>
          </a>
 
-         <a href="#" class="portfolio__card">
+         <!-- Модальное окно для пары "Юра и Даяна" -->
+         <div id="modalYuraDayana" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/YuraDayana/YuraDayana-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Ссылка на карточку пары "Дмитрий и Анастасия" -->
+         <a href="#modalDmitriiAnastasia" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-004.png" alt="Роман и Даша" class="portfolio__image">
             <div class="portfolio__caption">Дмитрий и Анастасия</div>
          </a>
 
-         <a href="#" class="portfolio__card">
+         <!-- Модальное окно для пары "Дмитрий и Анастасия" -->
+         <div id="modalDmitriiAnastasia" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/DmitriiAnastasia/DmitriiAnastasia-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Ссылка на карточку пары "Кинн и Тая" -->
+         <a href="#modalKinnTaya" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-005.png" alt="Роман и Даша" class="portfolio__image">
             <div class="portfolio__caption">Кинн и Тая</div>
          </a>
 
-         <a href="#" class="portfolio__card">
+         <!-- Модальное окно для пары "Кинн и Тая" -->
+         <div id="modalKinnTaya" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/KinnTaya/KinnTaya-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Ссылка на карточку пары "Николай и Ирина" -->
+         <a href="#modalNikolayIrina" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-006.png" alt="Роман и Даша" class="portfolio__image">
             <div class="portfolio__caption">Николай и Ирина</div>
          </a>
+
+         <!-- Модальное окно для пары "Николай и Ирина" -->
+         <div id="modalNikolayIrina" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <!-- Добавьте контейнер для изображений, которые будут меняться -->
+                  <div class="gallery-slide">
+                     <img src="images/img/portfilio-slider/NikolayIrina/NikolayIrina-001.jpg" alt="Фото 1">
+                  </div>
+                  <!-- Стрелки для навигации -->
+                  <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+                  <a class="next" onclick="changeSlide(1)">&#10095;</a>
+               </div>
+            </div>
+         </div>
 
       </div>
    </div>

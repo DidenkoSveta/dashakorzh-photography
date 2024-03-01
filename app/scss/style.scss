@@ -867,17 +867,6 @@
    display: flex; /* показываем только активный шаг */
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Стили для модального окна */
 .modal {
    display: none; /* Скрыто по умолчанию */
@@ -885,47 +874,95 @@
    z-index: 1000; /* Выше всех элементов на странице */
    left: 0;
    top: 0;
-   width: 100%; /* Полная ширина экрана */
-   height: 100%; /* Полная высота экрана */
+   width: 100vw; /* Полная ширина экрана */
+   height: 100vh; /* Полная высота экрана */
    overflow: auto; /* Прокрутка, если содержимое выходит за пределы экрана */
    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
- }
- 
- .modal-content {
+}
+
+.modal-content {
    position: relative;
    background-color: #fefefe;
-   margin: 10% auto; /* Отцентровать содержимое */
-   padding: 20px;
+   margin: 0 auto; /* Отцентровать содержимое */
+   padding: 10px;
    border: 1px solid #888;
-   width: 80%; /* Ширина содержимого */
-   max-width: 600px; /* Максимальная ширина содержимого */
- }
- 
- .close {
-   color: #aaa;
+   width: 90vw;
+   height: 100vh;
+}
+
+.close {
+   position: relative;
+   color: $bege;
    float: right;
-   font-size: 28px;
+   right: 30px;
+   top: 10px;
+   font-size: 36px;
    font-weight: bold;
- }
- 
- .close:hover,
- .close:focus {
-   color: black;
+}
+
+.close:hover,
+.close:focus {
+   color: $brown;
    text-decoration: none;
    cursor: pointer;
- }
- 
- .modal-gallery {
+}
+
+.modal-gallery {
    display: flex;
    flex-wrap: wrap;
    justify-content: center;
-   gap: 10px; /* Отступы между изображениями */
+   align-items: center;
+   width: 100%;
+   height: 100%;
+}
+
+.gallery-slide {
+   display: flex;
+   justify-content: center;
+   width: auto;
+   height: 98%;
+}
+
+.gallery-slide img {
+   max-width: 100%;   /* Максимальная ширина относительно родительского блока */
+   max-height: 90vh;  /* Максимальная высота относительно высоты экрана */
+   height: auto;      /* Высота изменяется автоматически для сохранения пропорций */
+   object-fit: contain; /* Гарантирует, что содержимое не выйдет за рамки и сохранит пропорции */
  }
  
- .modal-gallery img {
-   max-width: 100px; /* Ширина изображений в галерее */
-   margin: 10px;
-   vertical-align: middle;
- }
- 
+
+.prev,
+.next {
+   cursor: pointer;
+   position: absolute;
+   top: 50%;
+   width: auto;
+   padding: 16px;
+   margin-top: -50px;
+   color: $bege;
+   font-weight: bold;
+   font-size: 20px;
+   transition: 0.6s ease;
+   border-radius: 0 3px 3px 0;
+   user-select: none;
+}
+
+/* Расположение стрелки "назад" */
+.prev {
+   left: 20px;
+   border-radius: 3px 0 0 3px;
+}
+
+/* Расположение стрелки "вперед" */
+.next {
+   right: 20px;
+   border-radius: 0 3px 3px 0;
+}
+
+/* Появление стрелок при наведении */
+.prev:hover,
+.next:hover {
+   background-color: $light-bege;
+}
+
 @import "mobile";
