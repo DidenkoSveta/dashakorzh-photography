@@ -71,7 +71,7 @@
          <ul class="promo__services">
             <li class="promo__service">Советы по позированию</li>
             <li class="promo__service">Флешка с фото в подарок</li>
-            <li class="promo__service">Первый из 20 фото в <br> первый день после свадьбы</li>
+            <li class="promo__service">Превью из 20 фото в <br> первый день после свадьбы</li>
          </ul>
 
          <div class="promo__image-container promo__mobile-img">
@@ -130,10 +130,24 @@
 
       <div class="portfolio__grid">
 
-         <a href="#" class="portfolio__card">
-            <img src="images/img/portfolio/portfolio__image-001.png" alt="Роман и Даша" class="portfolio__image">
+         <!-- Ссылка на карточку пары "Георгий и Эллина" -->
+         <a href="#modalGeorgiyEllina" class="portfolio__card">
+            <img src="images/img/portfolio/portfolio__image-001.png" alt="Георгий и Эллина" class="portfolio__image">
             <div class="portfolio__caption">Георгий и Эллина</div>
          </a>
+
+         <!-- Модальное окно для пары "Георгий и Эллина" -->
+         <div id="modalGeorgiyEllina" class="modal">
+            <div class="modal-content">
+               <span class="close">&times;</span>
+               <div class="modal-gallery">
+                  <img src="images/img/portfolio/georgiy-ellina-01.jpg" alt="Фото 1">
+                  <img src="images/img/portfolio/georgiy-ellina-02.jpg" alt="Фото 2">
+                  <img src="images/img/portfolio/georgiy-ellina-03.jpg" alt="Фото 3">
+                  <img src="images/img/portfolio/georgiy-ellina-04.jpg" alt="Фото 4">
+               </div>
+            </div>
+         </div>
 
          <a href="#" class="portfolio__card">
             <img src="images/img/portfolio/portfolio__image-002.png" alt="Роман и Даша" class="portfolio__image">
@@ -276,6 +290,30 @@
                <a href="#" class="price__button link-btn">Записаться</a>
             </div>
          </article>
+      </div>
+   </div>
+</section>
+<section class="feedback">
+   <div class="feedback__container">
+      <h2 class="feedback__title">Оставить заявку</h2>
+      <div class="feedback__wrapper">
+         <img src="images/img/contact__form-img.png" class="feedback__wrapper-img" alt="Свадебный фотограф">
+         <form class="feedback__form" action="#" method="post">
+            <p class="feedback__form-text">Оставьте контакты и я напишу вам в WhatsApp для консультации</p>
+            <div class="feedback__input-group">
+               <input type="text" id="name" name="name" placeholder="Ваше имя" class="feedback__input" required>
+            </div>
+            <div class="feedback__input-group">
+               <input type="tel" id="phone" name="phone" placeholder="Контактный телефон" class="feedback__input"
+                  required>
+            </div>
+            <div class="feedback__consent">
+               <input type="checkbox" id="consent" name="consent" class="feedback__checkbox" required>
+               <label for="consent">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных
+                     данных</a></label>
+            </div>
+            <button type="submit" class="feedback__submit link-btn">Заказать консультацию фотографа</button>
+         </form>
       </div>
    </div>
 </section>
@@ -476,30 +514,6 @@
          <div class="faq-item faq-item__last">
          </div>
 
-      </div>
-   </div>
-</section>
-<section class="feedback">
-   <div class="feedback__container">
-      <h2 class="feedback__title">Оставить заявку</h2>
-      <div class="feedback__wrapper">
-         <img src="images/img/contact__form-img.png" class="feedback__wrapper-img" alt="Свадебный фотограф">
-         <form class="feedback__form" action="#" method="post">
-            <p class="feedback__form-text">Оставьте контакты и я напишу вам в WhatsApp для консультации</p>
-            <div class="feedback__input-group">
-               <input type="text" id="name" name="name" placeholder="Ваше имя" class="feedback__input" required>
-            </div>
-            <div class="feedback__input-group">
-               <input type="tel" id="phone" name="phone" placeholder="Контактный телефон" class="feedback__input"
-                  required>
-            </div>
-            <div class="feedback__consent">
-               <input type="checkbox" id="consent" name="consent" class="feedback__checkbox" required>
-               <label for="consent">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных
-                     данных</a></label>
-            </div>
-            <button type="submit" class="feedback__submit link-btn">Заказать консультацию фотографа</button>
-         </form>
       </div>
    </div>
 </section>
