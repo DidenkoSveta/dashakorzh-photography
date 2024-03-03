@@ -9,7 +9,8 @@
    .faq-container,
    .feedback__container,
    .footer__container,
-   .quiz__container {
+   .quiz__container,
+   .privacy__container {
       padding: 0 8vw;
    }
 }
@@ -25,7 +26,8 @@
    .faq-container,
    .feedback__container,
    .footer__container,
-   .quiz__container {
+   .quiz__container,
+   .privacy__container {
       padding: 0 4vw;
    }
 }
@@ -59,7 +61,6 @@
       width: 50vw;
       height: 100vh;
       z-index: 2000;
-      transition: left 0.3s;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -88,14 +89,12 @@
 @media (max-width: 1070px) {
    .navigation__menu.show {
       transform: translateX(-50vw);
-      transition: all 0.6s ease;
    }
 }
 
 @media (max-width: 768px) {
    .navigation__menu.show {
       transform: translateX(-100vw);
-      transition: all 0.6s ease;
    }
 }
 
@@ -182,11 +181,14 @@
    .promo__container {
       gap: 10%;
    }
+   .promo__discount {
+      font-size: 16px;
+   }
 }
 
 @media (max-width: 768px) {
    .promo__services {
-      gap: 6px;
+      gap: 10px;
       li::before {
          height: 8px;
          width: 8px;
@@ -194,13 +196,22 @@
    }
 }
 
-@media (max-width: 1040px) {
-   .promo__service {
-      font-size: 16px;
+@media (max-width: 380px) {
+   .promo__services {
+      gap: 6px;
+   }
+   .promo__discount {
+      font-size: 14px;
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
+   .promo__service {
+      font-size: 17px;
+   }
+}
+
+@media (max-width: 380px) {
    .promo__service {
       font-size: 14px;
    }
@@ -261,7 +272,7 @@
       gap: 20px;
    }
 }
-@media (max-width: 600px) {
+@media (max-width: 380px) {
    .promo__discount {
       br {
          display: block;
@@ -657,8 +668,8 @@
          font-size: 14px;
       }
       &__checkbox {
-         width: 26px !important;
-         height: 18px !important;
+         width: 20px !important;
+         height: 20px !important;
       }
       &__submit {
          height: 60px;
@@ -834,42 +845,209 @@
    }
 }
 @media (max-width: 1040px) {
-   .modal-content {
-      position: relative;
-      background-color: #fefefe;
-      margin: 0 auto; /* Отцентровать содержимое */
-      padding: 16px;
-      border: 1px solid #888;
-      width: 100vw;
-      height: 100vh;
+   .portfolio {
+      .modal-content {
+         position: relative;
+         background-color: #fefefe;
+         margin: 0 auto; /* Отцентровать содержимое */
+         padding: 16px;
+         border: 1px solid #888;
+         width: 100vw;
+         height: 100vh;
+      }
+      .prev,
+      .next {
+         padding: 10px;
+         font-size: 16px;
+      }
    }
-   .prev,
-   .next {
-      padding: 10px;
-      font-size: 16px;
+}
+@media (max-width: 768px) {
+   .price {
+      h3 {
+         max-width: 390px;
+      }
+
+      .modal-price__content {
+         gap: 20px;
+         margin: 10% auto;
+         width: 94%;
+      }
+      #bookingForm {
+         gap: 10px;
+      }
+      .feedback__checkbox {
+         top: 5px;
+         width: 16px !important;
+         height: 16px !important;
+      }
+   }
+}
+@media (max-width: 490px) {
+   .price {
+      h3 {
+         margin-top: 20px;
+         max-width: 90%;
+         font-size: 16px;
+      }
+
+      .modal-price__content {
+         gap: 20px;
+         margin: 10% auto;
+         width: 94%;
+         padding: 30px 10px;
+      }
+      #bookingForm {
+         gap: 10px;
+      }
+   }
+   .close-price {
+      top: 20px;
+      right: 10px;
+      font-size: 22px;
    }
 }
 @media (max-width: 1040px) {
+   .success-message {
+      width: 80%;
+      padding: 40px 20px;
+      border-radius: 10px;
+      font-size: 24px; /* ваш размер шрифта */
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 490px) {
+   .success-message {
+      width: 94%;
+      padding: 40px 20px;
+      border-radius: 10px;
+      font-size: 20px; /* ваш размер шрифта */
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1440px) {
+   .img-bg {
+      &__promo {
+         right: 0;
+         top: 45%;
+         height: 280px;
+      }
+      &__about {
+         left: 0;
+         top: 75%;
+         height: 280px;
+      }
+      &__price {
+         right: 0;
+         top: 0%;
+         height: 260px;
+      }
+      &__price-right {
+         height: 250px;
+      }
+      &__process {
+         height: 200px;
+         top: 80%;
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .img-bg {
+      &__promo {
+         right: 0;
+         top: 75%;
+         height: 200px;
+      }
+      &__about {
+         left: 0;
+         top: 80%;
+         height: 240px;
+      }
+      &__process {
+         display: none;
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 600px) {
+   .img-bg {
+      &__promo {
+         right: 0;
+         top: 45%;
+         height: 240px;
+         z-index: 1;
+      }
+      &__about {
+         left: 0;
+         top: 15%;
+      }
+      &__price {
+         right: 0;
+         top: 0%;
+         height: 200px;
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 400px) {
+   .img-bg {
+      &__promo {
+         right: 0;
+         top: 45%;
+         height: 200px;
+         z-index: 1;
+      }
+      &__about {
+         left: 0;
+         top: 20%;
+         height: 180px;
+      }
+      &__price,
+      &__price-right {
+         display: none;
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 1240px) {
+   .privacy {
+      margin-top: 40px;
+      &__wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 30px;
+         padding: 0px 0px;
+         h1 {
+            font-size: 38px;
+            margin-bottom: 20px;
+         }
+         h6 {
+            font-size: 16px;
+         }
+      }
+   }
 }
-@media (max-width: 1040px) {
+@media (max-width: 768px) {
+   .privacy {
+      &__wrapper {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         h1 {
+            font-size: 32px;
+            margin-bottom: 14px;
+         }
+      }
+   }
 }
-@media (max-width: 1040px) {
-}
-@media (max-width: 1040px) {
-}
-@media (max-width: 1040px) {
+@media (max-width: 490px) {
+   .privacy {
+      margin-top: 20px;
+      &__wrapper {
+         h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+         }
+         h6 {
+            font-size: 14px;
+         }
+      }
+   }
 }
 @media (max-width: 1040px) {
 }

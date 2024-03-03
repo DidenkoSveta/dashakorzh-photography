@@ -25,32 +25,33 @@
             <ul class="navigation__menu menu">
                <button class="header__close"></button>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">Портфолио</a>
+                  <a href="#portfolio" class="menu__link submenu__link">Портфолио</a>
                </li>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">Стоимость</a>
+                  <a href="#price" class="menu__link submenu__link">Стоимость</a>
                </li>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">Обо мне</a>
+                  <a href="#about" class="menu__link submenu__link">Обо мне</a>
                </li>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">Этапы</a>
+                  <a href="#process" class="menu__link submenu__link">Этапы</a>
                </li>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">FAQ</a>
+                  <a href="#faq" class="menu__link submenu__link">FAQ</a>
                </li>
                <li class="menu__item">
-                  <a href="page-catalog.html" class="menu__link submenu__link">Контакты</a>
+                  <a href="#feedback" class="menu__link submenu__link">Контакты</a>
                </li>
             </ul>
             <div class="header__contacts">
-               <a href="tel:+79261941256" class="header__tel">+7 (926)-194-12-56</a>
+               <a href="tel:+79261941256" class="header__tel" rel="noopener noreferrer">+7 (926) 194-12-56</a>
                <div class="header__social">
-                  <a href="#" class="header__social-link"><img src="images/icons/header/header__social-link1.svg"
-                        alt="whatsapp"></a>
-                  <a href="#" class="header__social-link"><img src="images/icons/header/header__social-link2.svg"
-                        alt="telegram"></a>
-                  <a href="https://www.instagram.com/Dawa_korzh" target="_blank" class="header__social-link"><img src="images/icons/header/header__social-link3.svg"
+                  <a href="https://wa.me/79261941256" target="_blank" rel="noopener noreferrer" class="header__social-link"><img
+                        src="images/icons/header/header__social-link1.svg" alt="whatsapp"></a>
+                  <a href="https://t.me/+79261941256" target="_blank" rel="noopener noreferrer" class="header__social-link"><img
+                        src="images/icons/header/header__social-link2.svg" alt="telegram"></a>
+                  <a href="https://www.instagram.com/Dawa_korzh" target="_blank" rel="noopener noreferrer"
+                     target="_blank" class="header__social-link"><img src="images/icons/header/header__social-link3.svg"
                         alt="instagram"></a>
                </div>
             </div>
@@ -81,8 +82,8 @@
 
          <!-- Элемент для действия (кнопка записи) -->
          <div class="promo__action">
-            <a class="promo__button link-btn">Записаться</a>
-            <div class="promo__discount">- 10% <br> до 29 февраля</div>
+            <a href="#" class="promo__button link-btn" data-package="Запись по акции">Записаться</a>
+            <div class="promo__discount">- 10% <br> до 31 марта</div>
          </div>
       </div>
 
@@ -92,10 +93,10 @@
          <img src="images/img/promo/promo__image-bg.png" alt="Свадебный фотограф" class="promo__image  promo__image-bg">
       </div>
    </div>
-   <!-- <img src="images/img/promo/promo__image-element.png" alt="Свадебный фотограф" class="promo__image-bg"> -->
+   <img src="images/icons/bg-elements/bg-elements-001.svg" alt="Свадебный фотограф" class="img-bg img-bg__promo">
 </div>
 <!-- Секция About -->
-<section class="about">
+<section class="about" id="about">
    <!-- Контейнер для обеспечения центровки и ограничения ширины содержимого -->
    <div class="about__container">
       <h2 class="about__title">Обо мне</h2>
@@ -121,9 +122,10 @@
 
       </div>
    </div>
+   <img src="images/icons/bg-elements/bg-elements-002.svg" alt="Свадебный фотограф" class="img-bg img-bg__about">
 </section>
 <!-- Блок Portfolio -->
-<section class="portfolio">
+<section class="portfolio" id="portfolio">
    <div class="portfolio__container">
 
       <h2 class="portfolio__title">Портфолио</h2>
@@ -266,7 +268,7 @@
    </div>
 </section>
 <section class="price">
-   <div class="price__container">
+   <div class="price__container" id="price">
       <h2 class="price__title">Стоимость фотосессии</h2>
       <div class="price__grid">
 
@@ -287,7 +289,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">25 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Стандартный">Записаться</a>
             </div>
          </article>
 
@@ -313,7 +315,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">50 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Премиум">Записаться</a>
             </div>
          </article>
 
@@ -335,7 +337,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">35 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Полный">Записаться</a>
             </div>
          </article>
 
@@ -355,7 +357,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">15 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Минимальный">Записаться</a>
             </div>
          </article>
 
@@ -375,13 +377,33 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">5 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Семейный">Записаться</a>
             </div>
          </article>
       </div>
+      <div id="modalBooking" class="modal-price">
+         <div class="modal-price__content">
+            <h3>Оставьте контакты и я напишу вам в WhatsApp для консультации</h3>
+            <span class="close-price">&times;</span>
+            <form id="bookingForm">
+               <input type="text" name="name" placeholder="Ваше имя" required>
+               <input type="tel" name="phone" placeholder="Контактный телефон" required>
+               <input type="hidden" name="package" id="selectedPackage" value=""> <!-- Скрытое поле для тарифа -->
+               <div class="feedback__consent">
+                  <input type="checkbox" id="consent" name="consent" class="feedback__checkbox" required>
+                  <label class="feedback__consent-policy" for="consent">Нажимая на кнопку, вы даете согласие на
+                     обработку своих <a href="#">персональных
+                        данных</a></label>
+               </div>
+               <button type="submit" class="link-btn">Записаться</button>
+            </form>
+         </div>
+      </div>
    </div>
+   <img src="images/icons/bg-elements/bg-elements-003.svg" alt="Свадебный фотограф" class="img-bg img-bg__price">
+   <img src="images/icons/bg-elements/bg-elements-002.svg" alt="Свадебный фотограф" class="img-bg img-bg__price-right">
 </section>
-<section class="feedback">
+<section class="feedback" id="feedback">
    <div class="feedback__container">
       <h2 class="feedback__title">Оставить заявку</h2>
       <div class="feedback__wrapper">
@@ -397,7 +419,7 @@
             </div>
             <div class="feedback__consent">
                <input type="checkbox" id="consent" name="consent" class="feedback__checkbox" required>
-               <label for="consent">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных
+               <label class="policy" for="consent">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">персональных
                      данных</a></label>
             </div>
             <button type="submit" class="feedback__submit link-btn">Заказать консультацию фотографа</button>
@@ -529,9 +551,10 @@
          </div>
       </div>
    </div>
+   <img src="images/icons/bg-elements/bg-elements-001.svg" alt="Свадебный фотограф" class="img-bg img-bg__process">
 </section>
 <!-- Секция этапов -->
-<section class="process">
+<section class="process" id="process">
    <div class="process__container">
       <h2 class="process__title">Легкое погружение в съемочный процесс</h2>
       <ol class="process__grid">
@@ -558,7 +581,7 @@
       </ol>
    </div>
 </section>
-<section class="faq">
+<section class="faq" id="faq">
    <div class="faq-container">
       <h2 class="process__title">Ответы на вопросы</h2>
       <div class="faq__grid">
@@ -612,23 +635,23 @@
 
     <div class="footer__navigation">
       <p class="footer__offer">Информация на сайте не является <br> публичной офертой</p>
-      <a href="privacy-policy.html " target="_blank" class="footer__link">Политика конфиденциальности</a>
+      <a href="privacy.html " target="_blank" class="footer__link">Политика конфиденциальности</a>
     </div>
 
     <div class="footer__branding">
       <p class="footer__copy">2024 Все права защищены</p>
-      <p class="footer__made-by">Сделано в <a href="https://webperspective.ru/" class="footer__link" target="_blank">WebPerspective</a></p>
+      <p class="footer__made-by">Сделано в <a href="https://webperspective.ru/" class="footer__link" target="_blank" rel="noopener noreferrer">WebPerspective</a></p>
     </div>
 
 
     <div class="footer__contact">
-      <a href="tel:+79269141256" class="footer__link footer__link--phone">+7 (926) 194-12-56</a>
+      <a href="tel:+79269141256" class="footer__link footer__link--phone" rel="noopener noreferrer">+7 (926) 194-12-56</a>
       <div class="footer__socials header__social">
-        <a href="#" class="header__social-link" target="_blank"><img src="images/icons/header/header__social-link1.svg"
+        <a href="https://wa.me/79261941256" target="_blank" rel="noopener noreferrer" class="header__social-link" target="_blank"><img src="images/icons/header/header__social-link1.svg"
             alt="whatsapp"></a>
-        <a href="#" class="header__social-link" target="_blank"><img src="images/icons/header/header__social-link2.svg"
+        <a href="https://t.me/+79261941256" target="_blank" rel="noopener noreferrer" class="header__social-link" target="_blank"><img src="images/icons/header/header__social-link2.svg"
             alt="telegram"></a>
-        <a href="https://www.instagram.com/Dawa_korzh" target="_blank" class="header__social-link"><img
+        <a href="https://www.instagram.com/Dawa_korzh" target="_blank" rel="noopener noreferrer" class="header__social-link"><img
             src="images/icons/header/header__social-link3.svg" alt="instagram"></a>
       </div>
     </div>

@@ -1,5 +1,5 @@
 <section class="price">
-   <div class="price__container">
+   <div class="price__container" id="price">
       <h2 class="price__title">Стоимость фотосессии</h2>
       <div class="price__grid">
 
@@ -20,7 +20,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">25 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Стандартный">Записаться</a>
             </div>
          </article>
 
@@ -46,7 +46,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">50 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Премиум">Записаться</a>
             </div>
          </article>
 
@@ -68,7 +68,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">35 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Полный">Записаться</a>
             </div>
          </article>
 
@@ -88,7 +88,7 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">15 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Минимальный">Записаться</a>
             </div>
          </article>
 
@@ -108,9 +108,29 @@
             </div>
             <div class="price__btn">
                <div class="price__cost">5 000 <span class="rub">₽</span></div>
-               <a href="#" class="price__button link-btn">Записаться</a>
+               <a href="#" class="price__button link-btn" data-package="Семейный">Записаться</a>
             </div>
          </article>
       </div>
+      <div id="modalBooking" class="modal-price">
+         <div class="modal-price__content">
+            <h3>Оставьте контакты и я напишу вам в WhatsApp для консультации</h3>
+            <span class="close-price">&times;</span>
+            <form id="bookingForm">
+               <input type="text" name="name" placeholder="Ваше имя" required>
+               <input type="tel" name="phone" placeholder="Контактный телефон" required>
+               <input type="hidden" name="package" id="selectedPackage" value=""> <!-- Скрытое поле для тарифа -->
+               <div class="feedback__consent">
+                  <input type="checkbox" id="consent" name="consent" class="feedback__checkbox" required>
+                  <label class="feedback__consent-policy" for="consent">Нажимая на кнопку, вы даете согласие на
+                     обработку своих <a href="#">персональных
+                        данных</a></label>
+               </div>
+               <button type="submit" class="link-btn">Записаться</button>
+            </form>
+         </div>
+      </div>
    </div>
+   <img src="images/icons/bg-elements/bg-elements-003.svg" alt="Свадебный фотограф" class="img-bg img-bg__price">
+   <img src="images/icons/bg-elements/bg-elements-002.svg" alt="Свадебный фотограф" class="img-bg img-bg__price-right">
 </section>

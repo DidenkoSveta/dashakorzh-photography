@@ -1,4 +1,8 @@
 // Основные стили документа
+// html {
+// 	scroll-behavior: smooth;
+// }
+
 html,
 body {
 	position: relative;
@@ -41,6 +45,12 @@ h1 {
 
 @media (max-width: 600px) {
 	h1 {
+		font-size: 34px;
+	}
+}
+
+@media (max-width: 370px) {
+	h1 {
 		font-size: 28px;
 	}
 }
@@ -73,9 +83,9 @@ h2 {
 .advantages,
 .process,
 .faq,
-.feedbackб
-.footer,
-.quiz {
+.feedbackб .footer,
+.quiz,
+.privacy {
 	width: 100vw;
 	display: flex;
 	justify-content: center;
@@ -91,7 +101,8 @@ h2 {
 .faq-container,
 .feedback__container,
 .footer__container,
-.quiz__container {
+.quiz__container,
+.privacy__container {
 	width: 100vw;
 	padding: 0 14vw;
 	display: flex;
