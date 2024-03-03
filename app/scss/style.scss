@@ -23,7 +23,7 @@
    }
    &__social {
       display: flex;
-      gap: 20px;
+      gap: 10px;
       align-items: center;
       &-link {
          background-color: $bege;
@@ -1300,26 +1300,26 @@ h2,
    transform: translateY(20px);
    transition:
       opacity 0.8s ease-out,
-      transform 1s ease-out;
+      transform 0.8s ease-out;
 }
 
 .advantages__card,
-.faq-item {
+.faq-item,
+.feedback__wrapper {
    opacity: 0;
    transform: translateY(-20px);
    transition:
       opacity 0.8s ease-out,
-      transform 1s ease-out;
+      transform 0.8s ease-out;
 }
 
 .process__item,
-.about__description,
-.feedback__wrapper{
+.about__description{
    opacity: 0;
    transform: translateX(60px);
    transition:
       opacity 0.8s ease-out,
-      transform 1s ease-out;
+      transform 0.8s ease-out;
 }
 
 
