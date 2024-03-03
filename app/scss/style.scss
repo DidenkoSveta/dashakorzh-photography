@@ -177,6 +177,7 @@
          align-items: flex-start;
          margin-left: 4px;
          font-weight: 500;
+         opacity: 0;
       }
       li::before {
          content: " ";
@@ -1151,11 +1152,11 @@
       flex-direction: column;
       gap: 30px;
       padding: 0px 120px;
-      h1{
+      h1 {
          font-size: 46px;
          margin-bottom: 30px;
       }
-      h6{
+      h6 {
          font-weight: 700;
          text-transform: uppercase;
          font-size: 18px;
@@ -1167,10 +1168,168 @@
       flex-direction: column;
       justify-content: flex-start;
       gap: 10px;
-      &-text{
+      &-text {
          font-weight: 700;
       }
    }
+}
+
+/* Плавное появление и выезжание изображения из правого нижнего угла */
+.promo__image-container {
+   opacity: 0;
+   transform: translate(50px, 50px);
+   transition:
+      opacity 1.5s ease-in-out,
+      transform 1.5s ease-in-out;
+}
+
+/* Когда страница загружается, элементы становятся видимыми */
+.promo__container.loaded .promo__title,
+.promo__container.loaded .promo__image-container {
+   opacity: 1;
+   transform: translate(0, 0);
+}
+
+/* Стили и анимации для заголовка */
+@keyframes fadeInLeft {
+   from {
+      opacity: 0;
+      transform: translateX(-50px);
+   }
+   to {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+.promo__title {
+   opacity: 0; /* Изначально невидим */
+   animation: fadeInLeft 1.5s forwards; /* Анимация начнется сразу же */
+}
+
+/* Стили и анимации для списка услуг */
+@keyframes fadeIn {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
+
+.promo__discount {
+   opacity: 0; /* Изначально невидим */
+   animation: fadeIn 0.8s forwards; /* Анимация начнется сразу же */
+}
+
+.promo__services li {
+   opacity: 0; /* Изначально невидим */
+   animation: fadeIn 1s forwards; /* Анимация начнется сразу же */
+}
+
+.promo__services li:nth-child(1) {
+   animation-delay: 0.5s; /* Задержка перед началом анимации */
+}
+
+.promo__services li:nth-child(2) {
+   animation-delay: 0.7s;
+}
+
+.promo__services li:nth-child(3) {
+   animation-delay: 0.9s;
+}
+
+.promo__discount {
+   animation-delay: 0.3s;
+}
+
+.promo__button {
+   border-radius: 100px;
+   background: linear-gradient(120deg, #734230dc, #583224); // Основной градиент кнопки
+   position: relative;
+   overflow: hidden;
+   padding: 20px 70px;
+   transition:
+      background-color 0.3s ease-in-out,
+      background 0.3s ease-in-out; // Плавные переходы для фона
+   opacity: 1;
+
+   &:before {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100%;
+      background-image: linear-gradient(
+         120deg,
+         rgba(255, 255, 255, 0) 30%,
+         rgba(255, 255, 255, 0.8),
+         rgba(255, 255, 255, 0) 70%
+      );
+      top: 0;
+      left: -100px;
+      animation: shine 3s infinite linear; // Анимация для создания блика
+   }
+
+   &:hover {
+      background: linear-gradient(120deg, #fdad19d8, #fdad19);
+
+      //  &:before {
+      //      animation: none; // Убираем анимацию блика при наведении
+      //      background-image: none;
+      //  }
+   }
+}
+
+@keyframes shine {
+   0%,
+   80% {
+      left: -100px;
+   }
+   100% {
+      left: 100%;
+   }
+}
+
+/* Скрытие элементов */
+h2,
+.portfolio__card,
+.price__card,
+.quiz__gifts,
+.quiz__wrapper{
+   opacity: 0;
+   transform: translateY(20px);
+   transition:
+      opacity 0.8s ease-out,
+      transform 1s ease-out;
+}
+
+.advantages__card,
+.faq-item {
+   opacity: 0;
+   transform: translateY(-20px);
+   transition:
+      opacity 0.8s ease-out,
+      transform 1s ease-out;
+}
+
+.process__item,
+.about__description,
+.feedback__wrapper{
+   opacity: 0;
+   transform: translateX(60px);
+   transition:
+      opacity 0.8s ease-out,
+      transform 1s ease-out;
+}
+
+
+.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+.visible-fvl {
+   opacity: 1;
+   transform: translateX(0);
 }
 
 @import "mobile";
